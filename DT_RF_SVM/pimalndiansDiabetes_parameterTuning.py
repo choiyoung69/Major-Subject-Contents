@@ -42,12 +42,11 @@ grid_dt = GridSearchCV(decisionTree_model,
 
 grid_dt.fit(train_X, train_y)
 grid_dt.get_params()
-
+grid_dt
 #0.765
 print('Train accuracy: %.3f' %grid_dt.score(train_X, train_y))
 #0.714
 print('Test accuracy: %.3f' %grid_dt.score(test_X, test_y))
- 
 #################################################################
 #2) SVM
 svm_model = svm.SVC(random_state=1234)
